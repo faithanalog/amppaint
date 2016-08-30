@@ -26,7 +26,7 @@ where your input is any image file (format does not matter as long as it can be
 read by [JuicyPixels](http://hackage.haskell.org/package/JuicyPixels)), and your
 output is a WAV file.
 
-Your input image is expected to be a monochrome image. If it's not, amppain will
+Your input image is expected to be a monochrome image. If it's not, amppaint will
 try to convert it to monochrome by taking the brightness of each pixel, keeping
 any brighter than 50% and rejecting any darker than 50%.
 
@@ -56,7 +56,7 @@ For GQRX, I generally start with
 * Rate: 20fps (or 25fps)
 * Zoom: 16x
 
-and then mess with my rate and zoom as needed to fix up the aspect ratio while
+and then mess with the rate and zoom as needed to fix up the aspect ratio while
 looking good.
 
 ![](http://i.ukl.me/2016-08-30-18:39:18-XcvbwAqJaiRGC0H7E3figGHwHdw~.png)
