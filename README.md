@@ -8,6 +8,8 @@ with [rpitx's](https://github.com/F5OEO/rpitx) pifm tool.
 Build/Install
 =============
 
+This is a [stack](https://www.haskellstack.org) project.
+
     stack setup    #Install GHC if needed
 
     stack build    #Build amppaint
