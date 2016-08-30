@@ -17,10 +17,6 @@ import Data.Audio
 import Data.Array.Unboxed
 import Data.Int
 
--- Other
-import Data.List
-import Control.Lens
-
 -- Reallocates empty samples to take the place of filled ones, spreading the
 -- reallocations evenly across the row
 rowSamples :: [Bool] -> [Double]
@@ -65,10 +61,10 @@ monochrome (PixelRGB8 r g b) = sum `div` 3 > 127
     sum = fromIntegral r + fromIntegral g + fromIntegral b :: Int
 
 pixels :: Image PixelRGB8 -> [Bool]
-pixels img = monochrome <$> toListOf p img
-  where
-    p :: Traversal (Image PixelRGB8) (Image PixelRGB8) PixelRGB8 PixelRGB8
-    p = imagePixels
+pixels img =
+    [ monochrome (pixelAt img x y)
+    | y <- [0 .. imageHeight img - 1] 
+    , x <- [0 .. imageWidth img - 1] ]
 
 -- Pixels are reversed for display with waterfall displays which move from top
 -- to bottom
