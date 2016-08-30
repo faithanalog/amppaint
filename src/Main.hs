@@ -108,6 +108,7 @@ main = do
     case args of
         ["-h"] -> displayHelp
         ["--help"] -> displayHelp
+        [] -> run stdin stdout
         [i] -> withFile i ReadMode (flip run stdout)
         [i,o] -> withFile i ReadMode (withFile o WriteMode . run)
         _ -> displayHelp
