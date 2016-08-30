@@ -12,7 +12,7 @@ This is a [stack](https://www.haskellstack.org) project.
 
     stack setup    #Install GHC if needed
 
-    stack build    #Build amppaint
+    stack build    #Build amppaint. Go get a cup of coffee while you wait.
 
     stack install  #Install amppaint to $HOME/.local/bin
 
