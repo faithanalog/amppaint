@@ -50,9 +50,9 @@ need to zoom in quite a bit to see it. make sure to use a high FFT size.
 
 For GQRX, I generally start with
 
-    * FFT Size: 65536
-    * Rate: 20fps (or 25fps)
-    * Zoom: 16x
+* FFT Size: 65536
+* Rate: 20fps (or 25fps)
+* Zoom: 16x
 
 and then mess with my rate and zoom as needed to fix up the aspect ratio while
 looking good.
