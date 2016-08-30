@@ -21,7 +21,7 @@ Usage
     amppaint <infile> <outfile>
 
 where your input is any image file (format does not matter as long as it can be
-read by [JuicyPixels](http://hackage.haskell.org/package/JuicyPixels), and your
+read by [JuicyPixels](http://hackage.haskell.org/package/JuicyPixels)), and your
 output is a WAV file.
 
 Your input image is expected to be a monochrome image. If it's not, amppain will
