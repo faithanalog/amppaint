@@ -31,7 +31,7 @@ any brighter than 50% and rejecting any darker than 50%.
 For best results, convert your image to monochrome manually before handing it
 over to amppaint.
 
-Additionally, I use a width of _960px_ for a nice resolution. The wider your
+Additionally, I use a width of **960px** for a nice resolution. The wider your
 image, the larger your FFT will need to be, and the lower your waterfall update
 rate will need to be to view it properly, so don't go too insane with it.
 
